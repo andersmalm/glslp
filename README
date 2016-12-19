@@ -1,0 +1,18 @@
+GLSLP ( OpenGL Shader Helper )
+Copyright (c) 2016 Anders Malm - Ekoli / Odious ^ S/N ^ Censor <andersmn@gmail.com>
+
+What?
+This is a small tool for converting .glsl files into a .cpp and a .h file which can be included and used in your projects.
+It removes unnecessary whitespaces and strips out the comments.
+
+How?
+If you have the binary, just run "glslp.exe -dir <dir with shaders>"
+
+Each shader will be a const char* named after file name in the shader namespace.
+example : foobar.glsl will become const char* shader::foobar_glsl
+
+In the folder with the shaders two new files will be generated, shaders.cpp and shaders.h.
+Just build one and include the other.. and you will have a most excellent day coding!
+
+Disclaimer:
+I have tried it on a lot of my own shaders without any problems, but I can't promise it will work everywhere.
